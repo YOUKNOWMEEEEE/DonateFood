@@ -1,0 +1,56 @@
+ <html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Food Donation</title>
+		<link rel="stylesheet" href="donation.css">
+		<script src="script.js"></script>
+		<section id="donation">
+	</head>
+	<body>
+		<header>
+			<h1>Food Donation by Restaurants</h1>
+		</header>
+		<main>
+			<h2>Donate Your Food</h2>
+			<form class="frm1" name="frmContact" method="post" action="donation.php">
+				<p>
+				<label for="restaurant-name" class="fdname">Restaurant Name :</label>
+				<input type="text" id="restaurantname" name="restaurantname" required><br>
+				</p>
+	
+				<p>
+				<label for="city" class="city">  City : </label>
+				<input type="text" name="city" id="city"><br>
+				</p>
+	
+				<p>
+				<label for="Pincode" class="pincode">Pin Code:</label>
+				<input type="text" id="pincode" name="pincode" maxlength="6"><br>
+				</p>
+	
+				<p>
+				<span class="fd">
+					<label id="" for="food-description">Food Description:</label>
+					<textarea id="fooddescription" name="fooddescription" rows="2" cols="60"></textarea><br>
+				</span><br>
+				</p>
+	
+				<p>
+				<label for="quantity">Quantity:</label>
+				<input type="text" id="quantity" name="quantity" min="1" max="5"><br><br>
+				</p>
+	
+				<p>
+				<label for="pickup-time">Pickup Date & Time:</label>
+				<input type="datetime-local" id="pickuptime" name="pickuptime"><br><br>
+				</p>
+				
+				<!-- <input type="submit" name="Submit" id="Submit" value="Submit"> -->
+				<button type="submit" id="Submit" value="Submit" onclick="donateFood()">Donate</button>
+			</form>
+		</section>
+		</main>
+	</body>
+	</html>
+	
+	
