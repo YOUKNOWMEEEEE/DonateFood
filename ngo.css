@@ -259,6 +259,14 @@ animation: about-text-imagination 5s ease-in-out forwards;
     font-size: 12px;
 }
 
+/* mapp */
+.mapp{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    place-items: center;
+}
+/* mapp ends here */
         
 /* **********************footer styling ********************* */
 #footer h2{
